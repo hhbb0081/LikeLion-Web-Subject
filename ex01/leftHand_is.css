@@ -1,0 +1,32 @@
+html {
+    background-color: tomato;
+  }
+  
+  body {
+      background-color: wheat;
+      border: 2px solid black;
+      height: 40vh;
+      width: 40vw;
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  
+  div{
+    background-color: darkcyan;  
+    height: 4vh;
+    margin: 5% auto;
+  }
+
+  .square {
+    border: 3px solid white; 
+    width: 60px;   
+}
+  
+  .square-mid {
+    border: 3px dashed white;
+    width: 26vw;
+    border-radius: 5px;
+}
+

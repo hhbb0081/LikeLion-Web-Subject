@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <script src="Calculator.js"></script>
+    <div>
+        <h2>Calculator</h2>
+        <label for="first">First number:</label>
+        <br>
+        <input type="text" placeholder="숫자를 입력하세요" id="first">
+        <br>
+        <label for="second">Second number:</label>
+        <br>
+        <input type="text" placeholder="숫자를 입력하세요" id="second">
+        <br>
+        <label for="oper">Operator:</label>
+        <br>
+        <select id="oper">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="%">%</option>
+        </select>
+        <br>
+        <button onclick="oper()">calculate</button>
+        <br>
+        <h2 id="result">Result: </h2>
+    </div>
+</body>
+</html>
