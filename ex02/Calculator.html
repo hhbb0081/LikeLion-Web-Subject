@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<style>
+		body {
+			background-color: #F9F9F9;
+			font-family: sans-serif;
+			font-size: 20px;
+			padding: 50px;
+		}
+		h1 {
+			color: #333;
+			font-size: 36px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		input[type="number"] {
+			font-size: 20px;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			width: 200px;
+		}
+		button[type="submit"] {
+			background-color: #4CAF50;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			color: #FFF;
+			cursor: pointer;
+			font-size: 20px;
+			padding: 10px;
+			width: 100px;
+		}
+		#result {
+			font-size: 36px;
+			font-weight: bold;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<form onsubmit="return calculate()">
+		<label for="num1">First number:</label>
+		<input type="number" id="num1" name="num1" required>
+		<label for="num2">Second number:</label>
+		<input type="number" id="num2" name="num2" required>
+		<label for="operator">Operator:</label>
+		<select id="operator" name="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select>
+		<button type="submit">Calculate</button>
+	</form>
+	<div id="result"></div>
+	<script>
+		function calculate() {
+			// Get the values of the two input fields and the operator
+			let num1 = parseFloat(document.getElementById("num1").value);
+			let num2 = parseFloat(document.getElementById("num2").value);
+			let operator = document.getElementById("operator").value;
+
+			// Perform the calculation based on the selected operator
+			let result;
+			switch (operator) {
+				case "+":
+					result = num1 + num2;
+					break;
+				case "-":
+					result = num1 - num2;
+					break;
+				case "*":
+					result = num1 * num2;
+					break;
+				case "/":
+					result = num1 / num2;
+					break;
+				default:
+					result = "Invalid operator";
+					break;
+			}
+
+			// Display the result on the page
+			document.getElementById("result").textContent = "Result: " + result;
+
+			// Prevent the form from submitting
+			return false;
+		}
+	</script>
+</body>
+</html>
