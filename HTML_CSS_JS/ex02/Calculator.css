@@ -1,0 +1,19 @@
+.number {
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+input[type=button]{
+    background-color: #32CD32;
+    color: white;
+}
+
+h1{
+    text-align: left;
+}
