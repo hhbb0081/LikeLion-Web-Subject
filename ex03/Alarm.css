@@ -1,0 +1,13 @@
+html {
+    background-color: white;
+  }
+button {
+    background-color: green;
+    color: white;
+    
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.alert-message {
+  font-family: 'Montserrat', sans-serif;
+}

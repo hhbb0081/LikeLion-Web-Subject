@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <center>
+  <head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <!-- css파일 연결 -->
+    <link rel="stylesheet" href="Calculator.css">
+    <!-- js파일 연결 -->
+    <script src="Calculator.js"></script>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    First number:<br>
+    <input type="number" id="first_number"><br>
+    Second number:<br>
+    <input type="number" id="second_number"><br>
+    Operator:<br>
+    <select id="operator">
+      <option value="+" selected>+</option>
+      <option value="-">-</option>
+      <option value="/">/</option>
+      <option value="*">*</option>
+    </select><br>
+    <button type="submit" id="calculate" onclick="showResult()">Calculate</button>
+</center>
+    <!-- 결과를 보여주는 div 태그에 대한 참조 추가 -->
+    <h1>result : 
+    <div id="result"></div>
+    </h1>
+  </body>
+</html>

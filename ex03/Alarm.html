@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <center>
+<head>
+    <meta charset="utf-8">
+    <title>Alarm Clock</title>
+    <script src="Alarm.js"></script>
+    <link rel="stylesheet" href="../ex03/Alarm.css">
+</head>
+<body>
+    <br><br>
+    Set the alarm time:<br>
+    <input type="time" id="alarmTime"><br>
+    <button id="setAlarmButton" class="button">Set Alarm</button>
+
+    <script>
+        var setAlarmButton = document.getElementById('setAlarmButton');
+        setAlarmButton.onclick = setAlarm;
+    </script>
+</body>
+</center>
+</html>
