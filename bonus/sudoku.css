@@ -1,0 +1,25 @@
+#puzzle {
+	border-collapse: collapse;
+	margin: 20px auto;
+}
+
+#puzzle td {
+	width: 40px;
+	height: 40px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#puzzle td input {
+	width: 100%;
+	height: 100%;
+	font-size: 24px;
+	border: none;
+	text-align: center;
+}
+
+#grade-button {
+	margin-top: 20px;
+	font-size: 18px;
+	padding: 10px;
+}
