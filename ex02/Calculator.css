@@ -1,0 +1,16 @@
+html {
+    background-color: rgb(237, 220, 188)
+
+  }
+
+
+
+  .button{
+    background-color: rgb(207, 187, 142);
+    width: 100px;
+    height: 40px;
+  }
+  .res{
+    margin : auto; 
+
+  }

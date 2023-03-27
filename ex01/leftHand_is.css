@@ -1,0 +1,42 @@
+html {
+    background-color: tomato;
+
+  }
+  
+  body {
+    
+   
+  }
+  .rectangle{
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+    background-color: wheat;
+    margin : auto;
+    margin-top: 110px;
+    top: 40%;
+    left: 50%; 
+    /* 상자 수직정렬 */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    }
+  .square {
+    border: 3px solid white;
+    width: 150px; /*상자 너비*/
+    height: 70px; /*상자 높이*/
+    background-color: rgb(54, 126, 111);
+    margin : auto;
+    margin-top: 20px;
+    top: 10%;
+
+  }
+  
+  .square_mid {
+    border: 3px dashed white;
+    width: 400px;
+    height: 70px;
+    margin : auto; 
+    /* margin-top 보다 margin을 먼저 써야 함 */
+    margin-top: 20px;
+    background-color: rgb(54, 126, 111);
+  }
