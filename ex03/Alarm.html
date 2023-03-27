@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset='utf-8'>
+  <title>ALARM</title>
+  <link rel="stylesheet" href="alarm.css">
+</head>
+<body>
+  <div class="container">
+    <div class="js-alarm nav">
+     <h1>Alarm Clock</h1>
+    <h3>Set the alarm time: </h3>
+     <input type="time" min="00:00" max="23:59"/>
+    <br><br>
+      <button class="setButton" 
+      onclick="init();" 
+      style="cursor: pointer; width: 100px; height: 40px; background-color: rgb(160, 229, 206);">
+      Set alarm</button>
+
+    </div>
+  </div>
+<script src="alarm.js"></script>
+</body>
+</html>
