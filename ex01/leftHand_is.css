@@ -1,0 +1,48 @@
+html {
+    background-color: tomato;
+ 
+  }
+  
+body {
+      background-color: wheat; 
+      width: 50vh;
+      height: 50vh;
+      margin: 0 auto;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid;
+
+
+      display: flex;
+      flex-direction: column; 
+      justify-content: space-between; 
+      align-items: center; /*  세로축 중앙 정렬 */
+      height: 50vh; /* 뷰포트 전체 높이 */
+      margin-top: 10px; 
+}
+
+  .square {
+    border: 3px solid white;
+    width: 12vh;
+    height: 6vh;
+    background-color: #008B8B;
+    margin-top:5px;
+    margin-bottom:10px;
+ 
+
+  }
+  
+  .square-mid {
+    display: flex;
+    align-items: center; /* 세로축(center)으로 중앙정렬 */
+    border: 3px dashed white;
+    width: 40vh;
+    height: 6vh;
+    background-color: #008B8B;
+    border-radius: 10px;
+    margin-bottom:20px;
+    
+  }
