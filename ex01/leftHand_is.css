@@ -1,0 +1,32 @@
+html {
+    background-color: tomato;
+    
+  }
+  
+  body {
+      background-color: wheat;
+      width: 350px;
+      height: 350px;
+      border: 2px solid black;
+      margin: 0 auto;
+      position: relative;
+      top:300px
+    }
+  
+  .square {
+    border: 2px solid white;
+    background-color: darkcyan;
+    width: 70px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #square-mid {
+    border: 2px dashed white;
+    background-color: darkcyan;
+    width: 260px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
