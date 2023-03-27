@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>calculator</title>
+        <style>
+         body {
+            text-align: center;
+         }
+        </style>
+
+        <script defer src = "Calculator.js"></script>
+
+    </head>
+
+    <body>
+        <br>
+        <br>
+        <h1>Calculator</h1>
+        <br>
+        <br>
+
+        <b>First number:</b> 
+        <br> 
+
+        <label>
+            <input type = "text" id = "number1" placeholder = "Enter first number" style = "width:200px; height:40px">
+        </label> <br>
+        <br>
+
+        <b>Second number:</b> 
+        <br>
+
+        <label>
+            <input type = "text" id = "number2" placeholder = "Enter second number" style = "width:200px; height:40px">
+        </label> <br>
+        <br>
+
+        <b>Operator: </b>
+
+        <select id = "opr">
+            <option value = "+"> + </option>
+            <option value = "-"> - </option>
+            <option value = "*"> * </option>
+            <option value = "/"> / </option>
+        </select> <br>
+        <br>
+
+        <label>
+             <input type = "button" name = "button" value = "Calculate" style = "width:100px; height:40px; background-color: lightgrey;" onclick = calculate()>
+        </label> <br>
+
+        <br>
+        <br>
+
+        <h2><b> Result = </b></h2>
+
+        <h2 id = "number3">
+
+    </body>
+</html>
