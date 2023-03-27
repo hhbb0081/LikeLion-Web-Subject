@@ -1,0 +1,9 @@
+html {
+    background-color: #f8f9fa;
+}
+button {
+    background-color: #4CAF50; 
+    border: none; 
+    color:white; 
+    border-radius: 5px;
+}
