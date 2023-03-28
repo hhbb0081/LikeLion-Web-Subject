@@ -1,0 +1,11 @@
+html {
+    background-color:rgb(226, 237, 235);
+}
+
+body{
+    background-color: rgb(208, 224, 223);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
