@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나는 최강이다</title>
+    <style>
+        #ra{
+            accent-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>최강의 개발자 등록</h1>
+    <p>이름 : <input type = "text" name = "name" value = "이름"></p>
+    <p>성 : <input type = "text" name = "gender" value = "성"></p>
+    <p>이메일 : <input type = "text" name = "email" value = "이메일"></p>
+    <p>아이디 : <input type = "text" name = "id" value = "아이디"></p>
+    <p>비밀번호 : <input type = "text" name = "password" value = "비밀번호"></p>
+    <p>생일 : <input type = "date" name = "birth" value = "mm/dd/yyyy"></p>
+    <p>당신의 구글링 능력은? <input type = "range" id = "ra" name = "range" min = 0 max = 100 list = "tickmarks" step="10" value = 50 color = "blue"></p>
+    <datalist id="tickmarks">
+        <option value="0"></option>
+        <option value="10"></option>
+        <option value="20"></option>
+        <option value="30"></option>
+        <option value="40"></option>
+        <option value="50"></option>
+        <option value="60"></option>
+        <option value="70"></option>
+        <option value="80"></option>
+        <option value="90"></option>
+        <option value="100"></option>
+        <option value="110"></option>
+    </datalist>
+    <p>가장 좋아하는 색깔은? <input type = "color" name = "color" value = "black"></p>
+    <input type = "submit" name="submit" value = "등록">
+</body>
+</html>
