@@ -1,0 +1,53 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 48px;
+    color: #333;
+}
+h3 {
+    text-align:center;
+    margin-top: 30px;
+    font-size: 24px;
+    color: #333;
+}
+div {
+    margin-top: 20px;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+
+    position: relative;
+}
+input[type=time] {
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
+  }
+  
+  button {
+    font-size: 24px;
+    padding: 10px 20px; /*안 여백*/
+    border-radius: 10px;
+    border: none; /* 테두리 설정*/
+    background-color: yellowgreen; 
+    color: #fff;
+    cursor: pointer; /*커서 모양*/
+  }
+button:hover { /*클릭하지 않고 올릴때*/
+    background-color: #0062cc;
+}
