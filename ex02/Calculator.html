@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="Calculator.css">
+    <script src="Calculator.js"></script>
+    <title>계산기</title>
+  </head>
+
+  <body>
+    <div class="center">
+    <h1>Calculator</h1>
+
+    <form>
+
+     <div>
+        <div>First number:</div>
+
+        <div>
+         <label for="first">
+         <input class="first" type="text" id="first">
+         </label>  
+        </div>
+
+    </div>
+
+    <div>
+        <div>Second number:</div>
+
+        <div>
+         <label for="second">
+         <input  class="second" type="text" id="second">
+         </label>  
+        </div>
+        
+    </div>
+
+    <div class="operator">
+        Operator
+    </div>
+
+    <div>
+        <select id="sign" onchange="handleOnChange()">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select>
+    </div>
+
+    <div>
+        <input type=button class="btn" value="등록" onclick="setValue();" >
+    </div>
+ 
+    </form>
+
+    <h2 id="result">result :</h2>
+    </div>
+    </body>
+
+</html>
