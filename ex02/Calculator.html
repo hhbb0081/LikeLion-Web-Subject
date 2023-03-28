@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Calculator.css">
+    <script src="Calculator.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form>
+        <label>First number:</label><br>
+        <input id="fnum" type="number"><br>
+        <label>Second number:</label><br>
+        <input id="snum" type="number"><br>
+    </form>
+    <br>
+        <label>Operator:</label><br>
+        <select id="operator_value">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select><br>
+        <input type="button" value="Calculate" id="btn" onclick="gocal()">
+    <br>
+    <h1 id="result">result</h1>
+</body>
+</html>
