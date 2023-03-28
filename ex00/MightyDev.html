@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나는 최강이다</title>
+  </head>
+  <body>
+    <header>
+      <h1>최강의 개발자 등록</h1>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label for="name">이름</label>
+          <input id="name" type="text" required />
+        </div>
+        <div>
+          <label for="last_name">성</label>
+          <input id="last_name" type="text" required />
+        </div>
+        <div>
+          <label for="email">이메일</label>
+          <input id="email" type="email" required />
+        </div>
+        <div>
+          <label for="password">비밀번호</label>
+          <input id="password" type="password" required />
+        </div>
+        <div>
+          <label for="birth">생일</label>
+          <input id="birth" type="date" />
+        </div>
+        <div>
+          <label for="ablility_googling">당신의 구글링 능력은?</label>
+          <input
+            id="ablility_googling"
+            type="range"
+            min="0"
+            max="100"
+            list="values"
+          />
+        </div>
+        <div>
+          <label for="color_favorite">좋아하는 색</label>
+          <input id="color_favorite" type="color" />
+        </div>
+        <div>
+          <button type="button">등록</button>
+        </div>
+        <datalist id="values">
+          <option value="0"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50"></option>
+          <option value="60"></option>
+          <option value="70"></option>
+          <option value="80"></option>
+          <option value="90"></option>
+          <option value="100"></option>
+        </datalist>
+      </form>
+    </main>
+  </body>
+</html>

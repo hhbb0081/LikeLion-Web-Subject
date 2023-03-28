@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link href="Calculator.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="total_box">
+      <header>
+        <h1 id="header">Calculator</h1>
+      </header>
+      <main>
+        <label for="FirstNum">First Number</label><br />
+        <input type="text" id="FirstNum" /><br /><br />
+        <label for="secondNumn">Second Number</label><br />
+        <input type="text" id="secondNum" /><br /><br />
+        <label for="op">Operator</label><br />
+        <select id="op">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option></select
+        ><br /><br />
+        <input type="button" value="Calculate" onclick="cal()" />
+      </main>
+    </div>
+    <div id="resBox">
+      <h1 id="result">Result</h1>
+    </div>
+    <!--스크립트는 최하단에 놓을 것-->
+    <script src="Calculator.js"></script>
+  </body>
+</html>
