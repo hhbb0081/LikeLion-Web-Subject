@@ -1,0 +1,32 @@
+html {
+    background-color: tomato;
+  }
+  
+  body {
+      background-color: wheat;
+      border: 3px solid black;
+      height: 340px;
+      width: 340px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);     
+  }
+  div{
+    background-color:rgb(40, 136, 131);
+    height: 5vh;
+    margin: 7% auto;
+  }
+
+
+  .square {
+    border: 3px solid white;
+    display: block;
+    width: 20%;
+  }
+  
+  .square-mid {
+    border: 3px dashed white;
+    border-radius: 5px;
+    width: 35vh;
+  }
