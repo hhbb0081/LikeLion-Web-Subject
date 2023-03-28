@@ -1,0 +1,46 @@
+html {
+    background-color: #fd6348;
+    height:100vh ;
+    display : flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body {
+
+    background-color : #f5ddb3; 
+    border-style: solid;
+    border-width:5px;
+    padding : 10px; 
+    border-color : black ; 
+    display : flex ; 
+    flex-direction :column ; 
+    justify-content: space-evenly;
+    align-items : center ; 
+    height : 360px; 
+    width : 360px ; 
+
+}
+
+div {
+    margin : 5px;
+    background-color : #0f8081;
+    border-width: 5px;
+    border-color : white;
+    
+}
+.small_box {
+
+    border-style: solid ;
+    height : 50px ;
+    width : 83px;
+}
+
+.big_box {
+    border-style : dashed  ;
+    height : 50px; 
+    width : 288px ; 
+
+}
+
