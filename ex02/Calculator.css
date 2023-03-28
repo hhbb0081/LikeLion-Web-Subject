@@ -1,0 +1,35 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.calculator input {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.calculator button {
+    margin: 10px;
+    padding: 10px;
+    width: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ccc;
+    color: #333;
+    cursor: pointer;
+}
+
+.calculator button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.calculator button:active {
+    transform: translateY(1px);
+}
