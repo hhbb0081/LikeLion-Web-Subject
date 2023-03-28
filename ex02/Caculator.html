@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            margin-top: 40px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], select {
+            padding: 10px;
+            border: groove;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 200px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        input[type="button"] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        input[type="button"]:hover {
+            background-color: #3e8e41;
+        }
+        #result {
+            font-size: 24px;
+            margin-top: 30px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Caculator</h1>
+
+    <label for="num1">First number:</label><br>
+    <input type="text" id="num1" name="num1" ><br><br>
+
+    <label for="num2">Second number</label><br>
+    <input type="text" id="num2" name="num2" ><br><br>
+
+    <label for="oper">Operator:</label><br>
+    <select id="oper" onclick="op(this)">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select><br>
+
+    <input type="button" value="Caculate" onclick="compute()">
+
+    <h2>Result:</h2>
+    <h1 id="result"></h1>
+    
+    <script>
+        function compute() {
+            let result = document.getElementById("result");
+            let n1 = parseFloat(document.getElementById("num1").value);
+            let n2 = parseFloat(document.getElementById("num2").value);
+            let operator = document.getElementById("oper").value;
+    
+            switch (operator) {
+                case '+':
+                    result.innerText = n1 + n2;
+                    break;
+                case '-':
+                    result.innerText = n1 - n2;
+                    break;
+                case '*':
+                    result.innerText = n1 * n2;
+                    break;
+                case '/':
+                    result.innerText = n1 / n2;
+                    break;
+                default:
+                    result.innerText = "Invalid operator";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

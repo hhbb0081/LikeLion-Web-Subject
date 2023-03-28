@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 48px;
+            color: #333;
+        }
+        h3 {
+            text-align:center;
+            margin-top: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+        div {
+            margin-top: 10px;
+            text-align: center;
+            
+            display: flex;
+            align-items: center;
+            
+            justify-content: center;
+        
+            position: relative;
+        }
+        input[type=time] {
+            font-size: 24px;
+            padding: 8px;
+            border-radius: 10px;
+            border: none;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
+          }
+          
+          button {
+            margin-top: 10px;
+            font-size: 24px;
+            padding: 10px 20px; /*안 여백*/
+            border-radius: 10px;
+            border: none; /* 테두리 설정*/
+            background-color: yellowgreen; 
+            color: #fff;
+            cursor: pointer; /*커서 모양*/
+          }
+        button:hover { /*클릭하지 않고 올릴때*/
+            background-color: #0062cc;
+        }
+    </style>
+</head>
+<body>
+    <!-- 여러 개의 요소를 감싸는 div = container, 반대는 wrapper -->
+    <div class="container"> 
+        <h1>Alarm Clock</h1>
+        <h3>Set the alarm time:</h3>
+        <div>
+          <input type="time" id="at" name="at">
+        </div>
+        <button onclick="setAlarm()">Set<br>Alarm</button>
+      </div>
+
+    <script>
+        function setAlarm() {
+            let alarmTime = document.getElementById("at").value; // 알람 시간을 입력받음
+            let [hours, minutes] = alarmTime.split(":"); // 시간과 분을 추출
+            let now = new Date(); // 현재 시간을 구함
+            let alarm = new Date(); // 알람 시간을 설정함
+            alarm.setHours(hours);
+            alarm.setMinutes(minutes);
+            alarm.setSeconds(0);
+
+
+            let timeToAlarm = alarm - now; // 알람 울림까지 남은 시간을 계산
+            if (timeToAlarm < 0) { // 알람 시간이 이미 지난 경우, 다음 날로 설정
+                alarm.setDate(alarm.getDate() + 1);
+                timeToAlarm = alarm - now;
+            }
+
+            setTimeout(() => { // 알람 울림
+                alert("Time's up!");
+            }, timeToAlarm);
+        }
+    </script>
+</body>
+</html>
