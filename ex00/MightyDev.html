@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>나는 최강이다</title>
+</head>
+<body>
+	<h1>최강의 개발자 등록</h1>
+	<form action="#" method="post">
+		<label for="first_name">이름</label>
+		<input type="text" id="first_name" name="first_name"  placeholder="이름"><br>
+        <label for="last_name">성</label>
+		<input type="text" id="last_name" name="last_name" placeholder="성"><br>
+		<label for="email">이메일</label>
+		<input type="email" id="email" name="email" placeholder="이메일"><br>
+        <label for="userId">아이디</label>
+		<input type="text" id="userId" name="userId" placeholder="아이디"><br>
+        <label for="userPassowrd">비밀번호</label>
+		<input type="password" id="userPassowrd" name="userPassowrd" placeholder="비밀번호"><br>
+        <label for="date">생일</label>
+        <input type="date" id="date" max="2023-12-31" min="1900-01-01" value="mm/dd/yyyy"><br>
+        <label for="google">당신의 구글링 능력은?</label>
+        <input type="range" id="google" name="google" min="1" max="10" list="tickmarks"><br>
+        <datalist id="tickmarks">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+        </datalist>
+        <label for="myBestColor">가장 좋아하는 색깔은?</label>
+        <input type='color' id='myBestColor' name="myBestColor" value='#000000'><br>
+		<input type="submit" value="등록">
+	</form>
+</body>
+</html>

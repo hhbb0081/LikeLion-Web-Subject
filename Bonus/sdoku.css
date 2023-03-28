@@ -1,0 +1,11 @@
+table{
+  border : 2px solid blue;
+  border-spacing : 0px; /*사이를 더 벌리는 것*/
+  font-size: 5px;
+}
+td{
+  width : 30px;
+  height : 30px;
+  text-align : center;
+  padding : 10px;
+}
