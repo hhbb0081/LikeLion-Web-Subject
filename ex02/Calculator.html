@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Calculator.css">
+    <script src = "Calculator.js"></script>
+</head>
+<body>
+    <div id = "cal">
+       <h1><b>Calculator</b></h1><br>
+       <p style="font-size: large;">First number:<br><input id="num1" type="text" name="num1"></p>
+       <br>
+       <p style="font-size: large;">Second number:<br><input id="num2" type="text" name="num2"></p>
+       <p style="font-size: large;">Operator:</p>
+        <select name="Operator" id="Operator">
+            <option value="*">*</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+        </select><br>
+        <input type="button" id="but" value="calculate" style="background-color: chartreuse;" onclick="cal();">
+    </div>
+    <div id="result"><h1><b>Result:</b></h1></div>
+</body>
+</html>
